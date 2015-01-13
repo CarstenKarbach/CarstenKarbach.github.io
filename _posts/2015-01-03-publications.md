@@ -7,4 +7,4 @@ fa-icon: book
 ---
 
 # Publications
-Find a list of my publications I have contributed to below.
+Find a list of publications I have contributed to below.
