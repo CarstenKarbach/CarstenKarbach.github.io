@@ -199,6 +199,27 @@ nav ul li:hover, nav ul li.active {
   background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAF0lEQVQIHWP8//+/MQMaYELjg7kUCgIASm8DOqGzfp8AAAAASUVORK5CYII=);
 }
 
+.mediv{
+	margin-bottom: 2em; 
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.medivleft{
+	display: inline-block;
+}
+
+.medivright{
+	display: inline-block;
+	margin-left: 2em;
+	text-align: left;
+}
+
+.medivright h3{
+	text-align: left;
+}
+
 .subtlecircleimg {
   text-align:center;
   z-index:3;
@@ -356,8 +377,30 @@ nav ul li:hover, nav ul li.active {
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  font-size:111px;
-}
+  font-size:100px;
+  }
+  
+  .mediv{
+	margin-bottom: 2em; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+  }
+
+  .medivleft{
+	display: inline-block;
+  }
+
+  .medivright{
+	display: block;
+	margin-left: 0em;
+	margin-top: 1em;
+	text-align: center;
+  }
+  
+  .medivright h3{
+	text-align: center;
+  }
   
   .sectiondivider {
     width:200px;
