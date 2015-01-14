@@ -201,7 +201,7 @@ nav ul li:hover, nav ul li.active {
 
 .mediv{
 	margin-bottom: 2em; 
-	width: 600px;
+	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -216,8 +216,34 @@ nav ul li:hover, nav ul li.active {
 	text-align: left;
 }
 
-.medivright h3{
-	text-align: left;
+.medivright .job{
+	font-style:italic;
+	font-size: 21px;
+	line-height: 30px;
+	margin-bottom: 4px;
+	margin-left: 0.5em;
+}
+
+.medivright .name{
+	font-size: 35px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+.mylinks{
+	margin-left: 1em;
+}
+
+.mylinktext{
+	margin-left: 0.4em;
+	line-height: 1.2em;
+	text-decoration: none;
+	text-underline: none; 
+}
+
+a:link, a:active, a:visited, a:hover{
+	text-decoration: none;
+	text-underline: none;
 }
 
 .subtlecircleimg {
@@ -361,6 +387,8 @@ nav ul li:hover, nav ul li.active {
 	.container h2 { font-size: 24px; }
 	.container h3 { font-size: 20px; }
 	.container h4 { font-size: 18px; }
+	.job {font-size: 18px}
+	.name {font-size: 24px}
 
 
   .section { padding:130px 0; }
@@ -395,11 +423,20 @@ nav ul li:hover, nav ul li.active {
 	display: block;
 	margin-left: 0em;
 	margin-top: 1em;
-	text-align: center;
+	text-align: left;
   }
   
-  .medivright h3{
-	text-align: center;
+  .medivright .name{
+  	font-size: 24px;
+  }
+  
+  .medivright .job{
+  	font-size: 18px;
+  	margin-left: 0em;
+  }
+  
+  .mylinks{
+	margin-left: 0em;
   }
   
   .sectiondivider {
