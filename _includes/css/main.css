@@ -230,6 +230,16 @@ nav ul li:hover, nav ul li.active {
 	margin-bottom: 10px;
 }
 
+.longtext{
+	text-align: left; 
+	line-height: 1.2em;
+	font-family: "Times New Roman", Serif;
+}
+
+.ita{
+	font-style:italic;
+}
+
 .mylinks{
 	margin-left: 1em;
 }
