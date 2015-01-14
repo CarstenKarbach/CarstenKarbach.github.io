@@ -246,6 +246,10 @@ a:link, a:active, a:visited, a:hover{
 	text-underline: none;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 .subtlecircleimg {
   text-align:center;
   z-index:3;
