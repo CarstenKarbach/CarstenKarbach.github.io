@@ -251,6 +251,32 @@ nav ul li:hover, nav ul li.active {
 	text-underline: none; 
 }
 
+.languageselect{
+	display: inline-block;
+	position:absolute;
+	top:1em; 
+	right: 0em;
+	padding-right:1em;
+	padding-left: 0.2em;
+	padding-bottom: 0.2em;
+	background:#2e2e2e;
+}
+
+.languageicon{
+  	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+.languagelink{
+	margin-left: 0.2em;
+	color: #999;
+}
+
+.languagelink .activelanguage{
+	color: white;
+}
+  
 a:link, a:active, a:visited, a:hover{
 	text-decoration: none;
 	text-underline: none;
@@ -388,11 +414,19 @@ a:link, a:active, a:visited, a:hover{
     min-width:60px;
     line-height:40px;
   }
+  .languageselect{
+  	top: 0.8em;
+  }
 }
 
 /* tiny size (phones) */
 @media only screen and (max-width: 380px) {
   nav ul li { min-width:90px; line-height:20px; }
+  
+  .languageselect{
+  	top: 26px;
+  	padding-bottom:
+  }
 }
 
 /* anything not desktop */
