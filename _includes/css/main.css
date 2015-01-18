@@ -245,6 +245,21 @@ nav ul li:hover, nav ul li.active {
 	transform: rotate(90deg);
 }
 
+.largeChart{
+	display: block;
+	overflow: hidden;
+	margin-left: auto; 
+	margin-right: auto;
+	width: 700px; 
+	height: 350px;
+}
+
+.smallChart{
+	display: none;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
 .ita{
 	font-style:italic;
 }
@@ -426,6 +441,14 @@ a:link, a:active, a:visited, a:hover{
   .languageselect{
   	top: 0.4em;
   }
+  .smallChart{
+	width: 350px; 
+	height: 200px;
+	display: block;
+  }
+  .largeChart{
+  	display: none;
+  }
 }
 
 /* tiny size (phones) */
@@ -435,6 +458,18 @@ a:link, a:active, a:visited, a:hover{
   .languageselect{
   	top: 26px;
   	padding-bottom: 0px;
+  }
+  
+  .largeChart{
+	display: none;
+  }
+	
+  .smallChart{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px; 
+		height: 100px;
   }
 }
 

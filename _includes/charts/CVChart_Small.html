@@ -1,0 +1,21 @@
+<script type="text/javascript">
+  google.setOnLoadCallback(drawChartSmall);
+  function drawChartSmall() {
+    var options = {
+      title: 'Resume Overview',
+      vAxis: {textStyle:{fontSize: 6}},
+      isStacked: true,
+      legend: { position: 'right', textStyle:{fontSize: 6} },
+      aggregationTarget: 'none',
+      chartArea:{left:'10%',top:'10%',width:'65%',height:'70%'},
+      hAxis: {textStyle:{fontSize: 6}},
+      backgroundColor: '#f8f8f8'
+     };
+
+    var chart = new google.visualization.SteppedAreaChart(document.getElementById('cv_chart_small'));
+
+    chart.draw(getData('small'), options);
+  }
+</script>
+
+<div class="smallChart" id="cv_chart_small"></div>

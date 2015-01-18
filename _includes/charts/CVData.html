@@ -1,0 +1,80 @@
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  function redrawCharts(){
+	  drawChartSmall();
+	  drawChart();
+  }
+  
+  window.onresize = redrawCharts;
+  
+  google.load("visualization", "1", {packages:["corechart"]});
+  function getData(mysize){
+	  var pastYears = '1998-2006';
+	  var school = 'Secondary School';
+	  var edu = 'Professional Education';
+	  var bachelor = 'Bachelor';
+	  var master = 'Master';
+	  var time = 'Time';
+	  var eduBegin = 'Begin of Professional Education';
+	  var bachelorThesis = 'Bachelor\'s Th.';
+	  var masterThesis = 'Master\'s Th.';
+	  var finalExam = 'Final Exams';
+	  var work = 'Work';
+	  
+	  if(mysize == 'small'){
+		  pastYears = '98-06';
+		  school = 'Sec. School';
+		  edu = 'Prof. Education';
+		  bachelorThesis = 'Ba. Th.';
+		  masterThesis = 'Ma. Th.';
+	  }
+	  
+	  var data = google.visualization.arrayToDataTable([
+	      [time,  school, edu, bachelor, master, work],
+	      [pastYears,   100,         			0, 					0,	0,  0],
+	      ['01/2007',   100,         			0, 					0,	0,  0],
+	      ['04/2007',   100,         			0, 					0,	0,  0],
+	      ['07/2007',   100,          			0, 					0,	0,  0],
+	      ['10/2007',   0,          		   50, 				   50,	0,  0],
+	      
+	      ['01/2008',   0,          		   50, 				   50,	0,  0],
+	      ['04/2008',   0,          		   50, 				   50,	0,  0],
+	      ['07/2008',   0,          		   50, 				   50,	0,  0],
+	      ['10/2008',   0,          		   50, 				   50,	0,  0],
+	      
+	      ['01/2009',   0,          		   50, 				   50,	0,  0],
+	      ['04/2009',   0,          		   50, 				   50,	0,  0],
+	      ['07/2009',   0,          		   50, 				   50,	0,  0],
+	      ['10/2009',   0,          		   50, 				   50,	0,  0],
+	      
+	      ['01/2010',   0,          		   50, 				   50,	0,  0],
+	      ['04/2010',   0,          		   50, 				   50,	0,  0],
+	      [bachelorThesis,   0,          		   50, 				   50,	0,  0],
+	      ['10/2010',   0,          		    0, 				    0,	66,  34],
+	      
+	      ['01/2011',   0,          		    0, 				   0,  66,  34],
+	      ['04/2011',   0,          		    0, 				   0,  66,  34],
+	      ['07/2011',   0,          		    0, 				   0,  66,  34],
+	      ['10/2011',   0,          		    0, 				   0,  66,  34],
+	      
+	      [masterThesis,   0,          		    0, 				   0,  66,  34],
+	      [masterThesis,   0,          		    0, 				   0,  66,  34],
+	      [masterThesis,   0,          		    0, 				   0,  66,  34],
+	      ['10/2012',   0,          		    0, 				   0,   0,  100],
+	      
+	      ['01/2013',   0,          		    0, 				   0,   0,  100],
+	      ['04/2013',   0,          		    0, 				   0,   0,  100],
+	      ['07/2013',   0,          		    0, 				   0,   0,  100],
+	      ['10/2013',   0,          		    0, 				   0,   0,  100],
+	      
+	      ['01/2014',   0,          		    0, 				   0,   0,  100],
+	      ['04/2014',   0,          		    0, 				   0,   0,  100],
+	      ['07/2014',   0,          		    0, 				   0,   0,  100],
+	      ['10/2014',   0,          		    0, 				   0,   0,  100],
+	      
+	      ['01/2015',     0,          		    0, 				   0,   0,  100]
+	    ]);
+	  return data;
+  }
+    
+</script>
