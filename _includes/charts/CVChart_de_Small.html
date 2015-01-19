@@ -2,7 +2,7 @@
   google.setOnLoadCallback(drawChartSmall);
   function drawChartSmall() {
     var options = {
-      title: 'Resume Overview',
+      title: 'Lebenslauf Übersicht',
       vAxis: {textStyle:{fontSize: 6}},
       isStacked: true,
       legend: { position: 'right', textStyle:{fontSize: 6} },
@@ -14,7 +14,7 @@
 
     var chart = new google.visualization.SteppedAreaChart(document.getElementById('cv_chart_small'));
 
-    chart.draw(getData('small','en'), options);
+    chart.draw(getData('small','de'), options);
   }
 </script>
 

@@ -3,8 +3,8 @@
   function drawChart() {
     
     var options = {
-      title: 'Resume Overview',
-      vAxis: {title: 'Percentaged Working Time'},
+      title: 'Lebenslauf Übersicht',
+      vAxis: {title: 'Prozentuale Arbeitszeit'},
       isStacked: true,
       legend: { position: 'right' },
       aggregationTarget: 'none',
@@ -14,7 +14,7 @@
 
     var chart = new google.visualization.SteppedAreaChart(document.getElementById('cv_chart_large'));
 
-    chart.draw(getData('large','en'), options);
+    chart.draw(getData('large','de'), options);
   }
 </script>
 

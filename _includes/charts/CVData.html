@@ -8,7 +8,7 @@
   window.onresize = redrawCharts;
   
   google.load("visualization", "1", {packages:["corechart"]});
-  function getData(mysize){
+  function getData(mysize, language){
 	  var pastYears = '1998-2006';
 	  var school = 'Secondary School';
 	  var edu = 'Professional Education';
@@ -21,12 +21,29 @@
 	  var finalExam = 'Final Exams';
 	  var work = 'Work';
 	  
+	  if(language=='de'){
+		  school = 'Gymnasium';
+		  edu = 'Ausbildung';
+		  time = 'Zeit';
+		  eduBegin = 'Ausbildungsbeginn';
+		  bachelorThesis = 'Bachelorarbeit';
+		  masterThesis = 'Masterarbeit';
+		  finalExams = 'Abschlussprüfungen';
+		  work = 'Arbeit';
+	  }
+	  
 	  if(mysize == 'small'){
-		  pastYears = '98-06';
-		  school = 'Sec. School';
-		  edu = 'Prof. Education';
-		  bachelorThesis = 'Ba. Th.';
-		  masterThesis = 'Ma. Th.';
+		  if(language == 'de'){
+			  bachelorThesis = 'Ba.-Arbeit';
+			  masterThesis = 'Ma.-Arbeit';
+		  }
+		  else{
+			  pastYears = '98-06';
+			  school = 'Sec. School';
+			  edu = 'Prof. Education';
+			  bachelorThesis = 'Ba. Th.';
+			  masterThesis = 'Ma. Th.';
+		  }
 	  }
 	  
 	  var data = google.visualization.arrayToDataTable([
