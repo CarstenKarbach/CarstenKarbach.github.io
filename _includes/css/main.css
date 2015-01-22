@@ -221,6 +221,16 @@ nav ul li:hover, nav ul li.active {
 	vertical-align: middle;
 }
 
+.swsitelink{
+	font-size: .8em;
+	margin-left: 0.2em;
+}
+
+.swlinkdiv{
+	display: inline-block;
+	margin-top: 1em;
+}
+
 .swname{
 	font-size: 35px;
 	line-height: 40px;
