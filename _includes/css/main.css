@@ -212,6 +212,7 @@ nav ul li:hover, nav ul li.active {
 	padding: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	background: #9bcf2f;
 }
 
 .swdescription{
@@ -282,6 +283,28 @@ nav ul li:hover, nav ul li.active {
 .longtext{
 	text-align: left; 
 	line-height: 1.2em;
+}
+
+.publication{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.publicationleft{
+	text-align: middle;
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+}
+
+.publicationright{
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+	text-align: left;
 }
 
 .rotateRight{
