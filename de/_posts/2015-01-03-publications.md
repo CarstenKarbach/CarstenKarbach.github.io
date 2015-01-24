@@ -8,4 +8,5 @@ categories: de
 ---
 
 # Publikationen
-Hier folgt eine Liste meiner wissenschaftlichen Veröffentlichungen.
+
+{% include publications.html %}

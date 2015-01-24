@@ -7,5 +7,6 @@ fa-icon: book
 categories: en
 ---
 
-# Publications
-Find a list of publications I have contributed to below.
+<h1 style="background:;">Publications</h1>
+
+{% include publications.html %}
