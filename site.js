@@ -46,7 +46,8 @@ $.extend($.easing,
         $(document).scroll(function(){
             if (disableScrollFn) { return; }
             var page_height = $(window).height();
-            var pos = $(this).scrollTop();
+            var scrollBuffer = 10;
+            var pos = $(this).scrollTop()+scrollBuffer;
             for (i in sections) {
                 if ((pos + settings.scrollToOffset >= sections[i]) && sections[i] < pos + page_height){
                     activateNav(i);
