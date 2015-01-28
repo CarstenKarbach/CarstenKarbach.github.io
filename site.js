@@ -29,12 +29,12 @@ $.extend($.easing,
     	navItems.on('click', function(event){
     		event.preventDefault();
             var navID = $(this).attr("href").substring(1);
-            disableScrollFn = true;
+            //disableScrollFn = true;
             populateDestinations(); //recalculate these!
             activateNav(navID);            
         	$('html,body').animate({scrollTop: sections[navID] - settings.scrollToOffset},
                 settings.scrollSpeed, "easeInOutExpo", function(){
-                    disableScrollFn = false;
+                    //disableScrollFn = false;
                 }
             );
     	});
