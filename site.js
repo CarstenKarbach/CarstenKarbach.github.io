@@ -48,7 +48,6 @@ $.extend($.easing,
             var page_height = $(window).height();
             var scrollBuffer = 10;
             var pos = $(this).scrollTop()+scrollBuffer;
-            populateDestinations();
             for (i in sections) {
                 if ((pos + settings.scrollToOffset >= sections[i]) && sections[i] < pos + page_height){
                     activateNav(i);
