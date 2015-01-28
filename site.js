@@ -21,7 +21,7 @@ $.extend($.easing,
         settings = $.extend({
             scrollToOffset: 170,
             scrollSpeed: 800,
-            activateParentNode: true,
+            activateParentNode: false,
         }, options );
         navItems = this;
 
@@ -46,7 +46,7 @@ $.extend($.easing,
         $(document).scroll(function(){
             if (disableScrollFn) { return; }
             var page_height = $(window).height();
-            var scrollBuffer = 0;
+            var scrollBuffer = 10;
             var pos = $(this).scrollTop()+scrollBuffer;
             for (i in sections) {
                 if ((pos + settings.scrollToOffset >= sections[i]) && sections[i] < pos + page_height){
