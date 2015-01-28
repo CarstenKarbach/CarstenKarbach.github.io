@@ -65,7 +65,9 @@ $.extend($.easing,
     }
 
     function activateNav(navID) {
-    	for (nav in navs) { $(navs[nav]).removeClass('active'); }
+    	$('nav li').each( function(){
+    		$(this).removeClass('active');
+    	});
         $(navs[navID]).addClass('active');
     }
 })( jQuery );
