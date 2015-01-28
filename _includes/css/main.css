@@ -285,6 +285,11 @@ nav ul li:hover, nav ul li.active {
 	line-height: 1.2em;
 }
 
+.disclaimer p{
+	text-align: left; 
+	font-size: 0.8em;
+}
+
 .publication{
 	margin-top: 1em;
 	margin-bottom: 1em;
