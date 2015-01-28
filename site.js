@@ -46,6 +46,11 @@ $.extend($.easing,
         // setup scroll listener
         $(document).scroll(function(){
             if (disableScrollFn) { return; }
+            
+            $('nav li').each( function(){
+        		$(this).removeClass('active');
+        	});
+            
             var page_height = $(window).height();
             var scrollBuffer = 10;
             var pos = $(this).scrollTop()+scrollBuffer;
