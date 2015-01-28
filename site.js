@@ -21,7 +21,7 @@ $.extend($.easing,
         settings = $.extend({
             scrollToOffset: 170,
             scrollSpeed: 800,
-            activateParentNode: false,
+            activateParentNode: true,
         }, options );
         navItems = this;
 
@@ -30,8 +30,8 @@ $.extend($.easing,
     		event.preventDefault();
             var navID = $(this).attr("href").substring(1);
             disableScrollFn = true;
-            activateNav(navID);
             populateDestinations(); //recalculate these!
+            activateNav(navID);            
         	$('html,body').animate({scrollTop: sections[navID] - settings.scrollToOffset},
                 settings.scrollSpeed, "easeInOutExpo", function(){
                     disableScrollFn = false;
