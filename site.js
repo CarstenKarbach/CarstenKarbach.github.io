@@ -46,7 +46,7 @@ $.extend($.easing,
         $(document).scroll(function(){
             if (disableScrollFn) { return; }
             var page_height = $(window).height();
-            var scrollBuffer = 10;
+            var scrollBuffer = 0;
             var pos = $(this).scrollTop()+scrollBuffer;
             for (i in sections) {
                 if ((pos + settings.scrollToOffset >= sections[i]) && sections[i] < pos + page_height){
@@ -65,7 +65,7 @@ $.extend($.easing,
     }
 
     function activateNav(navID) {
-        for (nav in navs) { $(navs[nav]).removeClass('active'); }
+    	for (nav in navs) { $(navs[nav]).removeClass('active'); }
         $(navs[navID]).addClass('active');
     }
 })( jQuery );
