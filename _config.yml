@@ -35,3 +35,6 @@ colors:
   turquoise: '#0fbfcf'
   grey: 	 '#999999'
   
+kramdown:
+  auto_ids:  false
+  
