@@ -69,7 +69,6 @@ $.extend($.easing,
     		$(this).removeClass('active');
     	});
         $(navs[navID]).addClass('active');
-        $('body').click();
     }
 })( jQuery );
 
