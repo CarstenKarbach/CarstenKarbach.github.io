@@ -159,6 +159,16 @@ nav ul li.active {
   padding-top: 0;
 }
 
+@media (pointer: fine) {
+	nav ul li a:hover {
+	  opacity:1
+	}
+	nav ul li:hover, nav ul li.active {
+	  border-top-width: {{navborder_active}}px;
+	  padding-top: 0;
+	}
+}
+
 
 /* ----- sections/articles ----- */
 
