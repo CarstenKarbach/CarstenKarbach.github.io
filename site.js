@@ -69,6 +69,7 @@ $.extend($.easing,
     		$(this).removeClass('active');
     	});
         $(navs[navID]).addClass('active');
+        $('body').focus();
     }
 })( jQuery );
 
