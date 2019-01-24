@@ -141,7 +141,7 @@ nav ul li {
   line-height:normal;
   letter-spacing:normal;
   text-transform:uppercase;
-  min-width:110px;
+  min-width:130px;
   line-height:60px;
   margin:0;
 }
@@ -518,7 +518,7 @@ a:link, a:active, a:visited, a:hover{
 @media only screen and (max-width: 679px) {
   nav { font-size:11px; }
   nav ul li {
-    min-width:60px;
+    min-width:100px;
     line-height:40px;
   }
   .languageselect{
@@ -536,7 +536,7 @@ a:link, a:active, a:visited, a:hover{
 
 /* tiny size (phones) */
 @media only screen and (max-width: 380px) {
-  nav ul li { min-width:90px; line-height:20px; }
+  nav ul li { min-width:100px; line-height:20px; }
   
   .languageselect{
   	top: 26px;

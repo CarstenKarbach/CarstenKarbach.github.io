@@ -3,6 +3,7 @@
 port: 4000
 host: 0.0.0.0
 safe: false
+repository: CarstenKarbach/CarstenKarbach.github.io
 
 
 ### site serving configuration ###
@@ -19,8 +20,8 @@ title:       "Carsten Karbach"
 keywords:    "Karbach, About, CV, projects"
 description: "List of software projects developed by Carsten"
 source_link: "https://github.com/CarstenKarbach/CarstenKarbach.github.io"
-favicon:     #put a path like: "img/favicon.ico"
-touch_icon:  #put a path like: "img/apple-touch-icon.png"
+favicon:     "/img/favicon.ico"
+touch_icon:  "/img/apple-touch-icon.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
 
 
