@@ -1,4 +1,4 @@
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
   function redrawCharts(){
 	  drawChartSmall();
@@ -7,7 +7,7 @@
   
   window.onresize = redrawCharts;
   
-  google.load("visualization", "1", {packages:["corechart"]});
+  google.charts.load("visualization", "1", {packages:["corechart"]});
   function getData(mysize, language){
 	  var pastYears = '1998-2006';
 	  var school = 'Secondary School';
@@ -93,5 +93,38 @@
 	    ]);
 	  return data;
   }
-    
+  
+	/**
+	* Get the selected column
+	* @param chart google's chart object
+	* @param data the data array returned by getData()
+	*/
+	function getSelectedColumn(chart, data) {
+		var selection = chart.getSelection();
+		if(selection.length != 1){
+			return null;
+		}
+		var item = selection[0];
+		return item.column;
+	}
+	
+	/**
+	* Handle the selection of a column
+	* @param chart google's chart object
+	* @param data the data array returned by getData()
+	*/
+	function selectionHandler(chart, data){
+		var colid = getSelectedColumn(chart, data);
+		if(colid == null){
+			return;
+		}
+		var columnToTarget = [null, null, null, null, '#projects', '#publications'];
+		
+		if(colid >= 0 && colid < columnToTarget.length){
+			var targetId = columnToTarget[colid];
+			if(targetId != null){
+				$(targetId).scrollToTarget();
+			}
+		}
+	}
 </script>

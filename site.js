@@ -17,6 +17,12 @@ $.extend($.easing,
     var navItems;
     var navs = {}, sections = {};
 
+    $.fn.scrollToTarget = function(){
+    	var target = $(this);
+    	var targetHight =  target.offset().top
+    	$('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo");
+    };
+    
     $.fn.navScroller = function(options) {
         settings = $.extend({
             scrollToOffset: 170,
@@ -88,8 +94,8 @@ $(document).ready(function (){
             $(this).on('click', function(event) {
         		event.preventDefault();
                 var target = $(event.target).closest("a");
-                var targetHight =  $(target.attr("href")).offset().top
-            	$('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo");
+                var scrolltarget = $(target.attr("href"));
+                scrolltarget.scrollToTarget();
             });
         }
 	});

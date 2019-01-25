@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  google.setOnLoadCallback(drawChartSmall);
+  google.charts.setOnLoadCallback(drawChartSmall);
   function drawChartSmall() {
     var options = {
       title: 'Resume Overview',
@@ -13,8 +13,13 @@
      };
 
     var chart = new google.visualization.SteppedAreaChart(document.getElementById('cv_chart_small'));
-
-    chart.draw(getData('small','en'), options);
+	var data = getData('small','en');
+    
+    chart.draw(data, options);
+    
+    google.visualization.events.addListener(chart, 'select', function() {
+    	selectionHandler(chart,data);
+  	});
   }
 </script>
 

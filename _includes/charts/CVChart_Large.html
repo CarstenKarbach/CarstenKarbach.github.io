@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  google.setOnLoadCallback(drawChart);
+  google.charts.setOnLoadCallback(drawChart);
   function drawChart() {
     
     var options = {
@@ -13,8 +13,13 @@
      };
 
     var chart = new google.visualization.SteppedAreaChart(document.getElementById('cv_chart_large'));
-
-    chart.draw(getData('large','en'), options);
+	var data = getData('large','en');
+    
+    chart.draw(data, options);
+    
+    google.visualization.events.addListener(chart, 'select', function() {
+    	selectionHandler(chart,data);
+  	});
   }
 </script>
 
