@@ -237,6 +237,7 @@ nav ul li.active {
 .swlinkdiv{
 	display: inline-block;
 	margin-top: 1em;
+	min-width: 5em;
 }
 
 .swname{
@@ -290,6 +291,12 @@ nav ul li.active {
 .longtext{
 	text-align: justify; 
 	line-height: 1.2em;
+}
+
+.shortinfo{
+	margin-right: 2em;
+	min-width: 5em;
+	display: inline-block;
 }
 
 .disclaimer p{
