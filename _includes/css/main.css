@@ -219,7 +219,7 @@ nav ul li.active {
 	padding: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background: #79af08;
+	background: #6f6c24;
 }
 
 .swdescription{
@@ -264,6 +264,11 @@ nav ul li.active {
 	margin-right: auto;
 }
 
+.inlineblock{
+	display: inline-block;
+	vertical-align: middle;
+}
+
 .medivleft{
 	display: inline-block;
 }
@@ -272,6 +277,10 @@ nav ul li.active {
 	display: inline-block;
 	margin-left: 2em;
 	text-align: left;
+}
+
+.toplogo{
+	height: 1em;
 }
 
 .medivright .job{
@@ -286,6 +295,7 @@ nav ul li.active {
 	font-size: 35px;
 	line-height: 40px;
 	margin-bottom: 10px;
+	white-space: nowrap;
 }
 
 .longtext{
@@ -522,7 +532,7 @@ a:link, a:active, a:visited, a:hover{
 
 
 /* mid size (tablets, landscapes) */
-@media only screen and (max-width: 679px) {
+@media only screen and (max-width: 1000px) {
   nav { font-size:11px; }
   nav ul li {
     min-width:100px;

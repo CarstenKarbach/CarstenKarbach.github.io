@@ -15,4 +15,4 @@ of compute time. Approved proposals are finally forwarded to the HPC system admi
 deploying the projects on the supercomputers. This software makes heavy use of
 relational databases. JavaScript implements client-side dynamic functions for tables, tooltips and 
 input suggestions. Unit and integration tests are triggered via Jenkins, which ensures code
-quality and security throughout the iterative development between 2014 and 2019.
+quality and security throughout the iterative development between 2014 and 2020.
