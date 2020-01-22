@@ -1,3 +1,11 @@
- 
-This is a compressed-commit version of
-[github.com/t413/SinglePaged](https://github.com/t413/SinglePaged)
+# README
+## Local development
+```
+bundle exec jekyll serve
+```
+## Local build
+```
+bundle exec jekyll build
+```
+## Website
+[https://carstenkarbach.github.io](https://carstenkarbach.github.io)
