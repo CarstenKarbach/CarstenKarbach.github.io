@@ -3,8 +3,9 @@ name:   Parallel Tools Platform
 logo:   "../img/logos/ptp.png"
 anchor: ptp
 lang:   "Java"
-tools:  "Eclipse, git, Gerrit, Hudon, RCP, SWT"
+tools:  "Eclipse, git, Gerrit, RCP, SWT"
 link:   "http://eclipse.org/ptp/"
+code:   "https://git.eclipse.org/r/plugins/gitiles/ptp/org.eclipse.ptp/+/refs/heads/master"
 ---
 PTP ist eine Entwicklungsumgebung zur Parallelprogrammierung basierend auf Eclipse.
 Die wichtigsten Komponenten sind Rechnerüberwachung, Code Analyse und ein paralleler

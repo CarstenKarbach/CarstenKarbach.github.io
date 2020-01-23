@@ -5,6 +5,7 @@ anchor: motac
 lang:   "Java"
 tools:  "Android Studio"
 link:   "https://play.google.com/store/apps/details?id=de.karbach.tac&hl=de"
+code:   "https://github.com/CarstenKarbach/MoTAC"
 ---
 Android-App for a digital version of the board game TAC released as Open Source through GitHub
 and deployed on Google Play.
