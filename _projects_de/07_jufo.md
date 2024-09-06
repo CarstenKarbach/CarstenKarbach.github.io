@@ -4,8 +4,7 @@ logo:   "../img/logos/jufo.png"
 anchor: jufo
 lang:   "C++, Perl"
 tools:  "XML, XSLT, CMake"
-link:   "http://www.fz-juelich.de/ias/jsc/EN/Expertise/Support/Software/JuFo/_node.html"
-code:   "https://www.fz-juelich.de/ias/jsc/EN/Expertise/Support/Software/JuFo/Download_node.html"
+link:   "https://juser.fz-juelich.de/record/128125"
 ---
 Simulationsprogramm für globale Job Scheduler auf Parallelrechnern. Konzept und 
 Implementierung dieser C++ Anwendung sind aus meiner Masterarbeit hervorgegangen.

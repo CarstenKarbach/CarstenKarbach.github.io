@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-bg: blue
+bg: turquoise
 color: white
 style: center
 fa-icon: book

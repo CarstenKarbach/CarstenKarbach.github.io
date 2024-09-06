@@ -4,7 +4,7 @@ logo:   "../img/logos/ptp.png"
 anchor: ptp
 lang:   "Java"
 tools:  "Eclipse, git, Gerrit, RCP, SWT"
-link:   "http://eclipse.org/ptp/"
+link:   "https://projects.eclipse.org/projects/tools.ptp"
 code:   "https://git.eclipse.org/r/plugins/gitiles/ptp/org.eclipse.ptp/+/refs/heads/master"
 ---
 PTP ist eine Entwicklungsumgebung zur Parallelprogrammierung basierend auf Eclipse.

@@ -4,7 +4,6 @@ logo:   "../img/logos/vobox.png"
 anchor: vobox
 lang:   "Java"
 tools:  "Android Studio, Robolectric"
-link:   "https://play.google.com/store/apps/details?id=de.karbach.superapp&hl=de"
 code:   "https://github.com/CarstenKarbach/VoBox"
 ---
 Mit dieser Android App kann man eigene Wörterbücher erstellen und damit seine Sprachkenntnisse
