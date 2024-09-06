@@ -7,7 +7,7 @@ repository: CarstenKarbach/CarstenKarbach.github.io
 
 
 ### site serving configuration ###
-exclude: [CNAME, README.md, .gitignore]
+exclude: [ CNAME, README.md, .gitignore ]
 permalink: /:title ## disables post output
 timezone: null
 lsi: false
@@ -16,30 +16,34 @@ highlighter: rouge
 
 
 ### content configuration ###
-title:       "Carsten Karbach"
-keywords:    "Karbach, About, CV, projects"
+title: "Carsten Karbach"
+keywords: "Karbach, About, CV, projects"
 description: "List of software projects developed by Carsten"
 source_link: "https://github.com/CarstenKarbach/CarstenKarbach.github.io"
-favicon:     "/img/favicon.ico"
-touch_icon:  "/img/apple-touch-icon.png"
+favicon: "/img/favicon.ico"
+touch_icon: "/img/apple-touch-icon.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
 
 
 ### template colors, used site-wide via css ###
 colors:
-  black:     '#111111'
-  white:     '#f8f8f8'
-  blue:      '#49a7e9'
-  green:     '#9bcf2f'
-  purple:    '#c869bf'
-  orange:    '#fab125'
+  black: '#111111'
+  white: '#f8f8f8'
+  blue: '#49a7e9'
+  green: '#9bcf2f'
+  purple: '#c869bf'
+  orange: '#fab125'
   turquoise: '#0fbfcf'
-  yellow:    '#c5b602'
-  grey: 	 '#999999'
+  yellow: '#c5b602'
+  grey: '#999999'
 
 collections:
-  - projects_de
-  - projects_en
-  
+  projects_de: { }
+  projects_en: { }
+  jobs_de:
+    output: true
+  jobs_en:
+    output: true
+
 kramdown:
-  auto_ids:  false
+  auto_ids: false
